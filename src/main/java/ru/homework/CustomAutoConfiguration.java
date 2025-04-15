@@ -1,13 +1,13 @@
 package ru.homework;
 
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import ru.homework.aspect.TaskAspect;
 import ru.homework.properties.LoggerProperties;
 
-@Configuration
+@AutoConfiguration
 @EnableConfigurationProperties(LoggerProperties.class)
 public class CustomAutoConfiguration {
 
